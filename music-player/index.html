@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/denemelerim/music-player/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="alignment">
+    <div class="container ">
+        <img id="music-images" src="/denemelerim/music-player/imges/45399.png" alt="basic-universe-background">
+        <audio id="audio" src="/denemelerim/music-player/mp3/Simge  - Aşkın Olayım (Onurr).mp3"></audio>
+        <div id="music-details" class="alignment column">
+            <p class="title"></p>
+            <p class="singer"></p>
+        </div>
+        <div class="alignment rangeControler column">
+            <input type="range" id="progressBar" min="0" max="" value="0">
+            <div class="timing alignment evenly">
+                <div class="alignment start">00:00</div>
+                <div class="alignment end">0:00</div>
+            </div>
+        </div>
+        <div id="controls" class="alignment evenly">
+            <i id="prev" class="fa-solid fa-backward-step"></i>
+            <i id="play" onclick="playpause()" class="fa-solid fa-play"></i>
+            <i id="next" class="fa-solid fa-forward-step"></i>
+        </div>
+        <div id="volume-Controls" class="alignment evenly">
+            <i id="volume" class="fa-solid fa-volume-high"></i>
+            <input type="range" id="volume-Bar" min="0" max="100" value="100">
+        </div>
+        <div class="alignment column barr">
+            <i class="fa-solid fa-bars bar"></i>
+            <ul class="list">
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script src="/denemelerim/music-player/music.js"></script>
+    <script src="/denemelerim/music-player/musicplayer.js"></script>
+    <script src="/denemelerim/music-player/musicApp.js"></script>
+</body>
+
+</html>
